@@ -1,6 +1,6 @@
 import numpy as np
 import tensorflow as tf
-from tensorflow.python.keras.layers import Layer, LayerNormalization, Dropout, Dense, Embedding
+from tensorflow.keras.layers import Layer, LayerNormalization, Dropout, Dense, Embedding
 
 
 class Transformer(Layer):
