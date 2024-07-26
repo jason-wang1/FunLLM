@@ -4,7 +4,6 @@
   - seq2seq框架
   - seq2seq细节
   - Attention
-  - 致谢
 
 篇章1中我们对语言模型做了概述。本教程的学习路径是：Attention->Transformer->BERT->GPT。因此，本篇章将从attention开始，逐步对Transformer结构所涉及的知识进行深入讲解，希望能给读者以形象生动的描述。
 
@@ -63,7 +62,9 @@ for Statistical Machine Translation](http://emnlp2014.org/papers/pdf/EMNLP201417
 
 让我们来进一步可视化一下基于RNN的seq2seq模型中的编码器在第1个时间步是如何工作：
 
-![rnn](./pictures/1-6-rnn.gif) 动态图：如图所示，RNN在第2个时间步，采用第1个时间步得到hidden state#10（隐藏层状态）和第2个时间步的输入向量input#1，来得到新的输出hidden state#1。
+![rnn](./pictures/1-6-rnn.gif) 
+
+动态图：如图所示，RNN在第2个时间步，采用第1个时间步得到hidden state#10（隐藏层状态）和第2个时间步的输入向量input#1，来得到新的输出hidden state#1。
 
 看下面的动态图，让我们详细观察一下编码器如何在每个时间步得到hidden sate，并将最终的hidden state传输给解码器，解码器根据编码器所给予的最后一个hidden state信息解码处输出序列。注意，最后一个 hidden state实际上是我们上文提到的context向量。
 ![](./pictures/1-6-seq2seq.gif) 动态图：编码器逐步得到hidden state并传输最后一个hidden state给解码器。

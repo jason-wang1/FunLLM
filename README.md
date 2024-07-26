@@ -18,4 +18,4 @@ LLM最佳学习路径及实践
    4. [测试微调后的效果](https://github.com/jason-wang1/FunLLM/blob/main/finetuning/4_noMergedTest.py)
    5. [合并微调后的文件与原有LLM，生成微调后的模型](https://github.com/jason-wang1/FunLLM/blob/main/finetuning/5_merged.py)
    6. [使用微调后LLM进行推理对话](https://github.com/jason-wang1/FunLLM/blob/main/finetuning/6_chatBotLora.py)
-4. 应用三：从零手搓LLM
+4. [应用三：检索增强生成](https://github.com/jason-wang1/FunLLM/tree/main/selfllm)
